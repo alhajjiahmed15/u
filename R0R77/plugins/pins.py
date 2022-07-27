@@ -6,13 +6,13 @@ from R0R77 import *
 
 
 PINS_TEXT = """
-**✘ اوامر تثبيت والغاء التثبيت لرسائل في المجموعة**
+**✘ اوامر تثبيت والغاء التثبيت الرسائل في المجموعة**
 
 ‣ `!تثبيت`
 بالرد على الرسالة التي تريد تثبيتها
 
 ‣ `!الغاء تثبيت`
-بالرد على الرسالت التي تريد الغاء تثبيتها
+بالرد على الرسالة التي تريد الغاء تثبيتها
 
 ‣ `!الغاء التثبيت للكل`
 لالغاء تثبيبت جميع الرسائل في المجموعة
@@ -77,20 +77,20 @@ async def confirm(event):
     check = await event.client.get_permissions(event.chat_id, event.sender_id)
     if check.is_creator:
         await R0R77.unpin_message(event.chat_id)
-        await event.edit("تم بنجاح الغاء تثببيت جميع الرسائل")
+        await event.edit("✅ تم بنجاح الغاء تثببيت جميع الرسائل")
         return 
 
-    await event.answer("يجب ان تكون مالك المجموعة اولا")
+    await event.answer("يجب ان تكون مالك المجموعة اولاً ؟")
 
 @R0R77.on(events.callbackquery.CallbackQuery(data="cancel"))
 async def cancel(event):
 
     check = await event.client.get_permissions(event.chat_id, event.sender_id)
     if check.is_creator:
-        await event.edit("عملية الغاء تثبيت جميع الرسائل تم الغائها ")
+        await event.edit("❌ عملية الغاء تثبيت جميع الرسائل تم الغائها")
         return 
 
-    await event.answer("يجب ان تكون مالك المجموعة اولا")
+    await event.answer("يجب ان تكون مالك المجموعة اولا ؟")
 
 
 @R0R77.on(events.callbackquery.CallbackQuery(data="pins"))
