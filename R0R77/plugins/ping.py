@@ -5,15 +5,15 @@ from telethon import Button, events
 from R0R77 import *
 
 IMG = os.environ.get(
-    "PING_PIC", "https://telegra.ph/file/2ad68bd0e391a69163d0a.jpg"
+    "PING_PIC", "https://telegra.ph/file/8e1c77c8d70e86d9c9686.jpg"
 )
 ms = 4
 
 ALIVE = os.environ.get(
-    "ALIVE", "@R0R77"
+    "ALIVE", "@ku_kx"
 )
 
-CAPTION = f"**سرعة البنك:** {ms}\n المالك:『{ALIVE}』"
+CAPTION = f"**سرعة البنك:** {ms}\n المطور:『{ALIVE}』"
 
 
 @R0R77.on(events.NewMessage(pattern="^/ping"))
