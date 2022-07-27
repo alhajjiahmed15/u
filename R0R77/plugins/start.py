@@ -30,7 +30,7 @@ async def start(event):
        return
 
     if event.is_group:
-       await event.reply("**- اهلا بك انا اعمل بنجاح**")
+       await event.reply("**اهلا بك انا اعمل بنجاح**")
        return
 
 
