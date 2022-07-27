@@ -1,6 +1,6 @@
 {
-    "name": "Telethon Music Bot",
-    "description": "تشغيل المقاطع الصوتية والفيدوهات في المكالمة الجماعية على التيليحرام",
+    "name": "DraGoN Music Bot",
+    "description": "تشغيل المقاطع الصوتية والفيدوهات في المكالمة الجماعية",
     "keywords": ["JMTHON", "JMTHON-MUSIC", "music", "voice chat", "telegram", "Yukki", "Yukki Music", "Private Music", "telethon"],
     "repository": "https://github.com/alhajjiahmed15/u",
   "stack": "container",
